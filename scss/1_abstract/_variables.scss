@@ -1,11 +1,30 @@
 // Color Variables
+$accent-color-400:#400904;
+$accent-color-300:#600d06;
+$accent-color-200:#801208;
+$accent-color-100:#a0160a;
 
+$green-400:#3C7334;
+$green-300:#4e9644;
+$green-200:#65b459;
+$green-100:#85c47c;
 
+$grey-800:#2d3748;
+$grey-700: #4a5568;
+$grey-600:#718096;
+$grey-500:#a0aec0;
+$grey-400:#BFB375;
+$grey-300:#D9CAAD;
+$grey-200:#F2E0DF;
+$grey-100:#f7fafc;
+
+$white:#fff;
+$black:#000;
 
 // Font Variables
-$bgtext-font: 'Playfair Display SC',
-serif;
-$body-font: "proxima-nova",
+$heading-font: 'Montserrat',
+sans-serif;
+$body-font: 'Source Sans Pro',
 sans-serif;
 
 
@@ -20,3 +39,19 @@ $step04: 5rem;
 $step05: 6.7rem;
 $step06:8.9rem;
 $step07:11.9rem;
+
+
+//Shadows
+$boxShadow-100:0 1px 3px 0 rgba(0, 0, 0, 0.1),
+0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+$boxShadow-200:0 4px 6px -1px rgba(0, 0, 0, 0.1),
+0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+$boxShadow-300:0 10px 15px -3px rgba(0, 0, 0, 0.1),
+0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+//Border Radius
+$bora-small:0.25rem;
+$bora-medium:0.5rem;
+$bora-large:0.75rem;
