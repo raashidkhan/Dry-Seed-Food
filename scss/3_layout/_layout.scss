@@ -1,0 +1,31 @@
+.twoCol {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include breakpoint(tab) {
+        flex-direction: column;
+    }
+
+    &>* {
+        width: calc(50% - 2.4rem);
+
+        @include breakpoint(tab) {
+            width: 100%;
+        }
+    }
+
+
+}
+
+.threeCol {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &>* {
+        width: calc(30% - 2.4rem);
+    }
+}

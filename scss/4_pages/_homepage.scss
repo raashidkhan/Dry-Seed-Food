@@ -8,14 +8,150 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include breakpoint(tab) {
+        background-position: center;
+
+    }
+
+    @include breakpoint(phone) {
+        background-position: left center;
+    }
 }
 
 .heroContent {
     width: 50%;
 
+    @include breakpoint(tab) {
+        width: 100%;
+    }
+
     &-subtitle {
         font-family: $base-font;
         color: $grey-700;
         width: 80%;
+    }
+}
+
+
+
+.homepageTagline {
+    width: 100vw;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include breakpoint(tab) {
+        padding: 10vw 5vw;
+    }
+
+    @include breakpoint(phone) {
+        flex-direction: column;
+    }
+
+    &-images {
+        width: 20%;
+
+        @include breakpoint(phone) {
+            width: 100%;
+        }
+    }
+
+    &-sentence {
+        align-self: center;
+        width: 45%;
+        text-align: center;
+        font-family: $heading-font;
+        color: $accent-color-400;
+
+        @include breakpoint(phone) {
+            width: 100%;
+            margin: 5vw 0;
+        }
+    }
+}
+
+.homepageAbout {
+    width: 100vw;
+    padding: 5vw;
+
+    &-desc {
+        padding: 5vw;
+        padding-left: 0;
+    }
+
+    &-image {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -10vw;
+            left: 5vw;
+            width: 70%;
+            height: 70%;
+            background-color: $grey-300;
+            z-index: 5;
+
+            @include breakpoint(tab) {
+                display: none;
+            }
+
+        }
+
+        img {
+            width: 35rem;
+            z-index: 10;
+            border: 1.5rem solid white;
+
+            @include breakpoint(tab) {
+                width: 100%;
+                border: none;
+
+            }
+        }
+    }
+
+}
+
+.homepage-whyUs {
+    width: 100vw;
+    padding: 5vw;
+    position: relative;
+
+    @include breakpoint(tab) {
+        flex-direction: column-reverse;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 100%;
+        background-color: $grey-300;
+        z-index: -5;
+
+    }
+
+    &-desc {
+        padding: 5vw;
+        padding-right: 5vw;
+    }
+
+    &-image {
+        display: flex;
+        align-self: center;
+
+        img {
+            width: 100%;
+            z-index: 10;
+            border: 1.5rem solid white;
+        }
     }
 }

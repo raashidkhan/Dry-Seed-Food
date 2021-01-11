@@ -27,6 +27,31 @@
     }
 }
 
+.linkSecondary {
+    color: $accent-color-300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    transition: 200ms ease;
+
+    img {
+        display: inline-block;
+        margin-left: 0.8rem;
+        transition: 200ms ease;
+    }
+
+
+}
+
+.linkSecondary:hover {
+    letter-spacing: 2.5px;
+
+    img {
+        transform: translateX(0.8rem);
+    }
+}
+
 .primaryCtaBtn {
     display: inline-block;
     padding: 0.8rem 1.6rem;

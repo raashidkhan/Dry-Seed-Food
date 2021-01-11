@@ -21,4 +21,21 @@ h6 {
     line-height: 1.25;
     font-weight: 900;
     letter-spacing: 1px;
+
+    @include breakpoint(small-phone) {
+        font-size: $step04;
+    }
+}
+
+.small-heading {
+    font-size: $step0;
+    letter-spacing: 2px;
+    color: $green-400;
+    text-transform: uppercase;
+
+}
+
+.section-heading {
+    font-size: $step03;
+    color: $grey-800;
 }
