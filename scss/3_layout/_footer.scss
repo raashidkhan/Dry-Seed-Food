@@ -1,0 +1,13 @@
+.footer {
+    background-color: $dark-coco;
+    padding: 5vw;
+    color: $grey-100;
+
+    @include breakpoint(tab) {
+        padding: 10vw 5vw;
+    }
+}
+
+.footerLinks-socialLinks a {
+    padding: 0.8rem;
+}
