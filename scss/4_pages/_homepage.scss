@@ -1,0 +1,21 @@
+.hero {
+    width: 100vw;
+    padding: 5vw;
+    min-height: 100vh;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: right bottom;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heroContent {
+    width: 50%;
+
+    &-subtitle {
+        font-family: $base-font;
+        color: $grey-700;
+        width: 80%;
+    }
+}
