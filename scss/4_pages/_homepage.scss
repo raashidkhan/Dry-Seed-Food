@@ -1,39 +1,120 @@
 .hero {
     width: 100vw;
     padding: 5vw;
-    min-height: 100vh;
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: right bottom;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    // min-height: 100vh;
+    //background-image: url('images/hero.jpg');
+    //background-size: cover;
+    //background-position: right bottom;
+    //display: flex;
+    //justify-content: flex-start;
+    //align-items: center;
+    position: relative;
 
     @include breakpoint(tab) {
-        background-position: center;
+        padding-top: 7.5rem;
 
     }
 
-    @include breakpoint(phone) {
-        background-position: left center;
-    }
+
 }
 
 .heroContent {
     width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+    transform: translateY(-50%);
+    z-index: 50;
+
 
     @include breakpoint(tab) {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
         width: 100%;
+        margin-bottom: 3.2rem;
+
     }
+
 
     &-subtitle {
         font-family: $base-font;
         color: $grey-700;
-        width: 80%;
+        width: 60%;
+
+        @include breakpoint(tab) {
+            width: 100%;
+
+        }
+    }
+}
+
+.hero-images {
+    width: 70%;
+    height: 80vh;
+    position: relative;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: $bora-small;
+    box-shadow: $boxShadow-100;
+
+    // display: flex;
+    @include breakpoint(tab) {
+        width: 100%;
+        height: 40rem;
+
+    }
+
+    @include breakpoint(phone) {
+        width: 100%;
+        height: 30rem;
+
+    }
+
+    &-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        //border-radius: $bora10;
+        overflow: hidden;
+
+
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            // border-radius: $bora10;
+
+
+        }
     }
 }
 
 
+.hero-images-slide {
+    transform: translateY(100%);
+    transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1) 300ms;
+    z-index: -10;
+    //opacity: 0;
+    backface-visibility: hidden;
+}
+
+.hero-images-slide.activeImage {
+    transform: translateY(0);
+    // opacity: 1;
+    z-index: 10;
+}
+
+.hero-images-slide.wasActiveImage {
+    transform: translateY(-100%);
+    // opacity: 0;
+}
 
 .homepageTagline {
     width: 100vw;
@@ -55,6 +136,7 @@
 
         @include breakpoint(phone) {
             width: 100%;
+            display: none;
         }
     }
 

@@ -253,37 +253,92 @@ h6 {
 .hero {
   width: 100vw;
   padding: 5vw;
-  min-height: 100vh;
-  background-image: url("images/hero.jpg");
-  background-size: cover;
-  background-position: right bottom;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  position: relative;
 }
 @media (max-width: 900px) {
   .hero {
-    background-position: center;
-  }
-}
-@media (max-width: 680px) {
-  .hero {
-    background-position: left center;
+    padding-top: 7.5rem;
   }
 }
 
 .heroContent {
   width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5vw;
+  transform: translateY(-50%);
+  z-index: 50;
 }
 @media (max-width: 900px) {
   .heroContent {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
     width: 100%;
+    margin-bottom: 3.2rem;
   }
 }
 .heroContent-subtitle {
   font-family: 1.5rem;
   color: #4a5568;
-  width: 80%;
+  width: 60%;
+}
+@media (max-width: 900px) {
+  .heroContent-subtitle {
+    width: 100%;
+  }
+}
+
+.hero-images {
+  width: 70%;
+  height: 80vh;
+  position: relative;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+@media (max-width: 900px) {
+  .hero-images {
+    width: 100%;
+    height: 40rem;
+  }
+}
+@media (max-width: 680px) {
+  .hero-images {
+    width: 100%;
+    height: 30rem;
+  }
+}
+.hero-images-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.hero-images-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-images-slide {
+  transform: translateY(100%);
+  transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1) 300ms;
+  z-index: -10;
+  backface-visibility: hidden;
+}
+
+.hero-images-slide.activeImage {
+  transform: translateY(0);
+  z-index: 10;
+}
+
+.hero-images-slide.wasActiveImage {
+  transform: translateY(-100%);
 }
 
 .homepageTagline {
@@ -309,6 +364,7 @@ h6 {
 @media (max-width: 680px) {
   .homepageTagline-images {
     width: 100%;
+    display: none;
   }
 }
 .homepageTagline-sentence {
