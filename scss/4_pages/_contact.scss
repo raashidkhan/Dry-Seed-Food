@@ -1,0 +1,78 @@
+.contactPage-form {
+    width: 100vw;
+    padding: 5vw;
+    //padding-top: 10vw;
+    display: flex;
+    background-color: $grey-300;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(phone) {
+        flex-direction: column;
+
+    }
+
+    &-image {
+        width: 35%;
+
+
+        @include breakpoint(phone) {
+            width: 100%;
+            padding-top: 7.5rem;
+            padding-bottom: 5vw;
+
+        }
+    }
+
+    &-content {
+        width: 55%;
+        padding: 5vw;
+        background-color: $grey-100;
+        border-radius: $bora-small;
+
+        @include breakpoint(phone) {
+            width: 100%;
+
+        }
+    }
+}
+
+.formField {
+    display: block;
+    // border: 1px solid red;
+    margin-bottom: 1.6rem;
+
+    input,
+    textarea {
+        font-family: inherit;
+        font-size: inherit;
+        display: block;
+        width: 100%;
+        margin-top: 0.8rem;
+        padding: 0.8rem;
+        border: 1px solid $green-400;
+        background-color: transparent;
+        border-radius: $bora-small;
+        box-shadow: $boxShadow-200;
+
+        &:focus {
+            outline: 1px solid rgba(0, 0, 0, 0.5);
+
+        }
+
+    }
+
+    textarea {
+
+        height: 20rem;
+
+    }
+
+}
+
+.formSubmitBtn.primaryCtaBtn {
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 1.6rem;
+}
