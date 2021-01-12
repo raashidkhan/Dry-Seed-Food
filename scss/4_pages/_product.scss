@@ -1,0 +1,78 @@
+.productPage-hero {
+    width: 100vw;
+    padding: 5vw;
+    padding-top: 10vw;
+
+    @include breakpoint(tab) {
+        padding-top: 7.5rem;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5vw;
+
+        @include breakpoint(tab) {
+            flex-direction: column;
+        }
+
+        h1 {
+            width: 40%;
+
+            @include breakpoint(tab) {
+                width: 100%;
+                margin-bottom: 2.4rem;
+            }
+        }
+
+        p {
+            width: calc(60% - 5vw);
+
+            @include breakpoint(tab) {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.productSection {
+    width: 100vw;
+    padding: 5vw;
+}
+
+.singleProduct {
+    position: relative;
+
+
+
+
+    &-image {}
+
+    &-content {
+        align-self: center;
+        color: $grey-700;
+        padding: 5vw;
+
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -5vw;
+            right: 0;
+            width: 60%;
+            height: calc(100% + 10vw);
+            background-color: $grey-300;
+            z-index: -1;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+    }
+}
+
+.singleProduct:not(:last-child) {
+    margin-bottom: 15vw;
+}

@@ -782,6 +782,75 @@ h6 {
   padding: 1.6rem;
 }
 
+.productPage-hero {
+  width: 100vw;
+  padding: 5vw;
+  padding-top: 10vw;
+}
+@media (max-width: 900px) {
+  .productPage-hero {
+    padding-top: 7.5rem;
+  }
+}
+.productPage-hero-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+}
+@media (max-width: 900px) {
+  .productPage-hero-content {
+    flex-direction: column;
+  }
+}
+.productPage-hero-content h1 {
+  width: 40%;
+}
+@media (max-width: 900px) {
+  .productPage-hero-content h1 {
+    width: 100%;
+    margin-bottom: 2.4rem;
+  }
+}
+.productPage-hero-content p {
+  width: calc(60% - 5vw);
+}
+@media (max-width: 900px) {
+  .productPage-hero-content p {
+    width: 100%;
+  }
+}
+
+.productSection {
+  width: 100vw;
+  padding: 5vw;
+}
+
+.singleProduct {
+  position: relative;
+}
+.singleProduct-content {
+  align-self: center;
+  color: #4a5568;
+  padding: 5vw;
+}
+.singleProduct-content::after {
+  content: "";
+  position: absolute;
+  top: -5vw;
+  right: 0;
+  width: 60%;
+  height: calc(100% + 10vw);
+  background-color: #D9CAAD;
+  z-index: -1;
+}
+.singleProduct-content p:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.singleProduct:not(:last-child) {
+  margin-bottom: 15vw;
+}
+
 .linkPrimary {
   position: relative;
   padding: 0.8rem;
