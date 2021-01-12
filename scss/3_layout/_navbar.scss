@@ -10,7 +10,8 @@
     color: $grey-800;
     box-shadow: $boxShadow-200;
     overflow: hidden;
-
+    z-index: 100;
+    background-color: $white;
 
 
     .logo {

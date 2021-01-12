@@ -1,0 +1,207 @@
+.aboutPage-hero {
+    width: 100vw;
+    padding: 5vw;
+    position: relative;
+
+    @include breakpoint(phone) {
+        padding: 7.5rem 5vw;
+        padding-bottom: 5vw;
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background-color: $green-400;
+        z-index: 5;
+
+        @include breakpoint(phone) {
+            height: 50%;
+
+        }
+    }
+
+    &-title {
+        padding: 5vw 0;
+        position: relative;
+        z-index: 10;
+        color: $white;
+
+        h1 {
+            color: $white;
+        }
+    }
+
+    &-image {
+        position: relative;
+        z-index: 10;
+        width: 70%;
+        margin-left: auto;
+        border-radius: $bora-small;
+
+        @include breakpoint(phone) {
+            width: 100%;
+            margin-bottom: 2.4rem;
+
+        }
+    }
+
+    &-content {
+        padding-top: 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include breakpoint(phone) {
+            flex-direction: column;
+
+        }
+
+        h2 {
+            width: 30%;
+
+            @include breakpoint(phone) {
+                width: 100%;
+                margin-bottom: 1.6rem;
+
+            }
+        }
+
+        p {
+            width: 70%;
+
+            @include breakpoint(phone) {
+                width: 100%;
+
+            }
+        }
+
+    }
+}
+
+
+.missionVision {
+    width: 100vw;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(tab) {
+        flex-direction: column;
+    }
+
+    &-image {
+        width: calc(70% - 5vw);
+        height: 100%;
+
+        @include breakpoint(tab) {
+            width: 100%;
+            margin-bottom: 2.4rem;
+        }
+
+    }
+
+    &-content {
+        width: 30%;
+
+        @include breakpoint(tab) {
+            width: 100%;
+
+        }
+
+        .mission {
+            margin-bottom: 5vw;
+
+            h3 {
+                color: $green-400;
+            }
+        }
+
+        .vision {
+            h3 {
+                color: $green-400;
+            }
+        }
+    }
+}
+
+.usp {
+    width: 100vw;
+    padding: 5vw;
+}
+
+.usp-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5vw;
+    grid-template-areas:
+        "area-1 area-2 area-5"
+        "area-3 area-4 area-5";
+
+    @include breakpoint(tab) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr);
+        grid-template-areas:
+
+            "area-1"
+            "area-2"
+            "area-3"
+            "area-4"
+            "area-5"
+
+        ;
+    }
+}
+
+.usp-area-1 {
+    grid-area: area-1;
+}
+
+.usp-area-2 {
+    grid-area: area-2;
+}
+
+.usp-area-3 {
+    grid-area: area-3;
+}
+
+.usp-area-4 {
+    grid-area: area-4;
+}
+
+.usp-area-5 {
+    grid-area: area-5;
+
+    @include breakpoint(tab) {
+        display: none;
+
+    }
+}
+
+.usp-area {}
+
+
+.ourResponsibility {
+    width: 100vw;
+    padding: 5vw;
+
+    &-image {
+        margin-bottom: 5vw;
+    }
+
+    &-content {
+
+        &-social {
+            @include breakpoint(tab) {
+                margin-bottom: 2.4rem;
+
+            }
+        }
+    }
+}
