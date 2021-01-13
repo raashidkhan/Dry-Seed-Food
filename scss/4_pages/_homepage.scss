@@ -1,13 +1,6 @@
 .hero {
     width: 100vw;
     padding: 5vw;
-    // min-height: 100vh;
-    //background-image: url('images/hero.jpg');
-    //background-size: cover;
-    //background-position: right bottom;
-    //display: flex;
-    //justify-content: flex-start;
-    //align-items: center;
     position: relative;
 
     @include breakpoint(tab) {
@@ -398,6 +391,48 @@
 
     @include breakpoint(tab) {
         min-height: 30rem;
+
+    }
+}
+
+.homepageContact {
+    width: 100vw;
+
+    &-image {
+        position: relative;
+
+
+
+        h2 {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $dark-coco;
+            text-align: center;
+            padding: 2.4rem;
+            background-color: $green-100;
+
+
+        }
+    }
+
+    &-content {
+        padding: 5vw;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            width: 70%;
+        }
+
+        a {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
     }
 }

@@ -44,3 +44,13 @@ if (heroImages) {
     imageSlide(imageArray, 'activeImage', 'wasActiveImage');
   }, 5000);
 }
+
+const parallaxImage = document.querySelectorAll('.thumbnail');
+
+if (parallaxImage) {
+  new simpleParallax(parallaxImage, {
+    orientation: 'down',
+    scale: 1.3,
+    delay: 1,
+  });
+}
