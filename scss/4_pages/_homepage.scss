@@ -297,7 +297,7 @@
 
     h2 {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         position: relative;
         z-index: 10;
@@ -307,10 +307,6 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
 
-        @include breakpoint(tab) {
-            justify-content: center;
-
-        }
     }
 }
 
@@ -342,12 +338,15 @@
 
 .homepageProduct-grid--item4 {
     grid-area: homepageProduct-grid--item4;
-    background-color: $dark-coco;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $white;
-    font-size: $step02;
+
+    div {
+        align-self: center;
+    }
+
+    h2 {
+        align-self: center;
+        text-align: center;
+    }
 }
 
 .homepageProduct-grid--item5 {
@@ -364,7 +363,7 @@
 
     h2 {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         position: relative;
         z-index: 10;
@@ -374,10 +373,7 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
 
-        @include breakpoint(tab) {
-            justify-content: center;
 
-        }
 
     }
 
@@ -389,23 +385,32 @@
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.15);
 
+
     @include breakpoint(tab) {
         min-height: 30rem;
 
     }
+
+    @include breakpoint(phone) {
+        padding: 5vw;
+
+    }
+
 }
 
 .homepageContact {
     width: 100vw;
+
 
     &-image {
         position: relative;
 
 
 
+
         h2 {
             position: absolute;
-
+            width: 70%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -414,6 +419,11 @@
             padding: 2.4rem;
             background-color: $green-100;
 
+            @include breakpoint(phone) {
+                font-size: $base-font;
+                width: 80%;
+
+            }
 
         }
     }
@@ -423,8 +433,20 @@
         display: flex;
         justify-content: space-between;
 
+        @include breakpoint(phone) {
+            flex-direction: column;
+
+        }
+
         p {
             width: 70%;
+
+            @include breakpoint(phone) {
+
+                width: 100%;
+                margin-bottom: 2.4rem;
+
+            }
         }
 
         a {
@@ -432,6 +454,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include breakpoint(phone) {
+
+                width: 100%;
+
+            }
         }
 
     }

@@ -47,7 +47,11 @@
 
 
 
-    &-image {}
+    &-image {
+        border-radius: $bora-small;
+        overflow: hidden;
+        box-shadow: $boxShadow-100;
+    }
 
     &-content {
         align-self: center;
@@ -65,6 +69,9 @@
             height: calc(100% + 10vw);
             background-color: $grey-300;
             z-index: -1;
+            border-radius: $bora-small;
+            overflow: hidden;
+            box-shadow: $boxShadow-100;
         }
 
         p:not(:last-child) {

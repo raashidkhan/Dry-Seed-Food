@@ -74,7 +74,7 @@ h6 {
 }
 @media (max-width: 414px) {
   .page-headings {
-    font-size: 5rem;
+    font-size: 3.7rem;
   }
 }
 
@@ -507,7 +507,7 @@ h6 {
 }
 .homepageProduct-grid--item1 h2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 10;
@@ -516,11 +516,6 @@ h6 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-}
-@media (max-width: 900px) {
-  .homepageProduct-grid--item1 h2 {
-    justify-content: center;
-  }
 }
 
 .homepageProduct-grid--item2 {
@@ -547,12 +542,13 @@ h6 {
 
 .homepageProduct-grid--item4 {
   grid-area: homepageProduct-grid--item4;
-  background-color: #1C100D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 2.8rem;
+}
+.homepageProduct-grid--item4 div {
+  align-self: center;
+}
+.homepageProduct-grid--item4 h2 {
+  align-self: center;
+  text-align: center;
 }
 
 .homepageProduct-grid--item5 {
@@ -568,7 +564,7 @@ h6 {
 }
 .homepageProduct-grid--item5 h2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 10;
@@ -577,11 +573,6 @@ h6 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-}
-@media (max-width: 900px) {
-  .homepageProduct-grid--item5 h2 {
-    justify-content: center;
-  }
 }
 
 .homepageProduct-grid--item {
@@ -595,6 +586,11 @@ h6 {
     min-height: 30rem;
   }
 }
+@media (max-width: 680px) {
+  .homepageProduct-grid--item {
+    padding: 5vw;
+  }
+}
 
 .homepageContact {
   width: 100vw;
@@ -604,6 +600,7 @@ h6 {
 }
 .homepageContact-image h2 {
   position: absolute;
+  width: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -612,19 +609,41 @@ h6 {
   padding: 2.4rem;
   background-color: #85c47c;
 }
+@media (max-width: 680px) {
+  .homepageContact-image h2 {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+}
 .homepageContact-content {
   padding: 5vw;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 680px) {
+  .homepageContact-content {
+    flex-direction: column;
+  }
+}
 .homepageContact-content p {
   width: 70%;
+}
+@media (max-width: 680px) {
+  .homepageContact-content p {
+    width: 100%;
+    margin-bottom: 2.4rem;
+  }
 }
 .homepageContact-content a {
   width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 680px) {
+  .homepageContact-content a {
+    width: 100%;
+  }
 }
 
 .aboutPage-hero {
@@ -668,6 +687,8 @@ h6 {
   width: 70%;
   margin-left: auto;
   border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 @media (max-width: 680px) {
   .aboutPage-hero-image {
@@ -718,6 +739,9 @@ h6 {
 .missionVision-image {
   width: calc(70% - 5vw);
   height: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 @media (max-width: 900px) {
   .missionVision-image {
@@ -782,6 +806,9 @@ h6 {
 
 .usp-area-5 {
   grid-area: area-5;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 @media (max-width: 900px) {
   .usp-area-5 {
@@ -795,6 +822,9 @@ h6 {
 }
 .ourResponsibility-image {
   margin-bottom: 5vw;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 @media (max-width: 900px) {
   .ourResponsibility-content-social {
@@ -915,6 +945,11 @@ h6 {
 .singleProduct {
   position: relative;
 }
+.singleProduct-image {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
 .singleProduct-content {
   align-self: center;
   color: #4a5568;
@@ -929,6 +964,9 @@ h6 {
   height: calc(100% + 10vw);
   background-color: #D9CAAD;
   z-index: -1;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 .singleProduct-content p:not(:last-child) {
   margin-bottom: 2.4rem;
