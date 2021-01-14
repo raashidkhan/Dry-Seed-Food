@@ -289,7 +289,7 @@ h6 {
 }
 @media (max-width: 900px) {
   .hero {
-    padding-top: 7.5rem;
+    padding-top: 10rem;
   }
 }
 
@@ -691,7 +691,7 @@ h6 {
 }
 @media (max-width: 680px) {
   .aboutPage-hero {
-    padding: 7.5rem 5vw;
+    padding: 10rem 5vw;
     padding-bottom: 5vw;
   }
 }
@@ -878,7 +878,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .contactPage-form {
     flex-direction: column;
   }
@@ -886,10 +886,10 @@ h6 {
 .contactPage-form-image {
   width: 35%;
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .contactPage-form-image {
     width: 100%;
-    padding-top: 7.5rem;
+    padding-top: 10rem;
     padding-bottom: 5vw;
   }
 }
@@ -899,7 +899,7 @@ h6 {
   background-color: #f7fafc;
   border-radius: 0.25rem;
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .contactPage-form-content {
     width: 100%;
   }
@@ -944,7 +944,7 @@ h6 {
 }
 @media (max-width: 900px) {
   .productPage-hero {
-    padding-top: 7.5rem;
+    padding-top: 10rem;
   }
 }
 .productPage-hero-content {
