@@ -22,8 +22,8 @@ h6 {
     font-weight: 900;
     letter-spacing: 1px;
 
-    @include breakpoint(small-phone) {
-        font-size: $step03;
+    @include breakpoint(phone) {
+        font-size: $step04;
     }
 }
 

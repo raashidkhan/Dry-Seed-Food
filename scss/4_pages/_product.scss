@@ -69,9 +69,11 @@
             height: calc(100% + 10vw);
             background-color: $grey-300;
             z-index: -1;
-            border-radius: $bora-small;
-            overflow: hidden;
-            box-shadow: $boxShadow-100;
+
+            @include breakpoint(tab) {
+                height: 100%;
+                top: 0;
+            }
         }
 
         p:not(:last-child) {

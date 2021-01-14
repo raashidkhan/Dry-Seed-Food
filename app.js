@@ -6,6 +6,7 @@ if (navbar) {
 
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('open');
+    menuBtn.classList.toggle('active');
   });
 }
 
