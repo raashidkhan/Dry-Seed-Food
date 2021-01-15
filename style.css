@@ -419,6 +419,48 @@ h6 {
   }
 }
 
+.homepageFeatures {
+  width: 100vw;
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #F2E0DF;
+}
+.homepageFeatures-icons {
+  width: 10%;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .homepageFeatures-icons {
+    width: 30%;
+    margin: 2.4rem 0;
+  }
+}
+@media (max-width: 680px) {
+  .homepageFeatures-icons {
+    width: 34%;
+  }
+}
+.homepageFeatures-icons img {
+  width: 7.5rem;
+  height: 7.5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2.4rem;
+}
+@media (max-width: 900px) {
+  .homepageFeatures-icons img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.homepageFeatures-icons p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
 .homepageAbout {
   width: 100vw;
   padding: 5vw;
