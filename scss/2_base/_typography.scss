@@ -17,10 +17,11 @@ h6 {
 
 .page-headings {
     font-size: $step06;
-    color: $grey-800;
+    color: $grey-700;
     line-height: 1.25;
     font-weight: 900;
     letter-spacing: 1px;
+
 
     @include breakpoint(phone) {
         font-size: 6.5rem;

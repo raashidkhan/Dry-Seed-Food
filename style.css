@@ -26,10 +26,12 @@ body {
   }
 }
 body::-webkit-scrollbar {
+  background-color: #F2E0DF;
   width: 1rem;
   border-radius: 0.5rem;
 }
 body::-webkit-scrollbar-thumb {
+  background-color: #65b459;
   border-radius: 0.5rem;
 }
 
@@ -67,7 +69,7 @@ h6 {
 
 .page-headings {
   font-size: 8.9rem;
-  color: #2d3748;
+  color: #4a5568;
   line-height: 1.25;
   font-weight: 900;
   letter-spacing: 1px;
@@ -135,9 +137,9 @@ h6 {
   z-index: 100;
   background-color: #fff;
 }
-.navbar .logo {
-  font-weight: 700;
-  font-size: 2.5rem;
+.navbar .logo img {
+  display: block;
+  height: 5rem;
 }
 .navbar .mobile-menu {
   display: none;
@@ -230,13 +232,26 @@ h6 {
 
 .footer {
   width: 100vw;
-  background-color: #1C100D;
+  background-color: #801208;
   padding: 5vw;
   color: #f7fafc;
 }
 @media (max-width: 900px) {
   .footer {
     padding: 10vw 5vw;
+  }
+}
+
+.footerLogo {
+  width: 100%;
+}
+.footerLogo img {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 900px) {
+  .footerLogo img {
+    margin: 2.4rem 0;
   }
 }
 
@@ -662,7 +677,7 @@ h6 {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 0.25rem;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 900px) {
   .homepageProduct-grid--item {
@@ -1069,6 +1084,8 @@ h6 {
   color: #f7fafc;
   border-radius: 0.25rem;
   transition: 200ms ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 .primaryCtaBtn:hover {
   background-color: #4e9644;

@@ -1,11 +1,24 @@
 .footer {
     width: 100vw;
-    background-color: $dark-coco;
+    background-color: $accent-color-200;
     padding: 5vw;
     color: $grey-100;
 
     @include breakpoint(tab) {
         padding: 10vw 5vw;
+    }
+}
+
+.footerLogo {
+    width: 100%;
+
+    img {
+        width: 100%;
+        display: block;
+
+        @include breakpoint(tab) {
+            margin: 2.4rem 0;
+        }
     }
 }
 

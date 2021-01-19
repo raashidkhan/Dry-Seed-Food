@@ -34,13 +34,13 @@ body {
 
 
     &::-webkit-scrollbar {
-        // background-color: $light-grey;
+        background-color: $grey-200;
         width: 1rem;
         border-radius: 0.5rem;
     }
 
     &::-webkit-scrollbar-thumb {
-        // background-color: $black;
+        background-color: $green-200;
         border-radius: 0.5rem;
     }
 

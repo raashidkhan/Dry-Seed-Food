@@ -15,8 +15,10 @@
 
 
     .logo {
-        font-weight: 700;
-        font-size: 2.5rem;
+        img {
+            display: block;
+            height: 5rem;
+        }
     }
 
     .mobile-menu {
