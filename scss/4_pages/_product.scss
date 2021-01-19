@@ -68,7 +68,7 @@
             right: 0;
             width: 60%;
             height: calc(100% + 10vw);
-            background-color: $grey-300;
+            background-color: $grey-200;
             z-index: -1;
 
             @include breakpoint(tab) {

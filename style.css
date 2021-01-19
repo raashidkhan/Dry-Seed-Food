@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
   border-radius: 0.5rem;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #65b459;
+  background-color: #53861c;
   border-radius: 0.5rem;
 }
 
@@ -83,7 +83,7 @@ h6 {
 .small-heading {
   font-size: 1.5rem;
   letter-spacing: 2px;
-  color: #3C7334;
+  color: #53861c;
   text-transform: uppercase;
 }
 
@@ -153,7 +153,7 @@ h6 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #1C100D;
+    background-color: #884B0A;
     color: #f7fafc;
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;
@@ -202,7 +202,7 @@ h6 {
     overflow: hidden;
   }
   .navbar .hamburger-menuBtn span {
-    background-color: #3C7334;
+    background-color: #53861c;
     width: 100%;
     height: 3px;
     display: block;
@@ -232,9 +232,9 @@ h6 {
 
 .footer {
   width: 100vw;
-  background-color: #801208;
+  background-color: #f7fafc;
   padding: 5vw;
-  color: #f7fafc;
+  color: #2d3748;
 }
 @media (max-width: 900px) {
   .footer {
@@ -477,6 +477,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.4rem;
+  color: #400904;
 }
 
 .homepageAbout {
@@ -702,10 +703,10 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #1C100D;
+  color: #884B0A;
   text-align: center;
   padding: 2.4rem;
-  background-color: #85c47c;
+  background-color: #b8e688;
 }
 @media (max-width: 680px) {
   .homepageContact-image h2 {
@@ -762,7 +763,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 60%;
-  background-color: #3C7334;
+  background-color: #53861c;
   z-index: 5;
 }
 @media (max-width: 680px) {
@@ -859,10 +860,10 @@ h6 {
   margin-bottom: 5vw;
 }
 .missionVision-content .mission h3 {
-  color: #3C7334;
+  color: #53861c;
 }
 .missionVision-content .vision h3 {
-  color: #3C7334;
+  color: #53861c;
 }
 
 .usp {
@@ -977,7 +978,7 @@ h6 {
   width: 100%;
   margin-top: 0.8rem;
   padding: 0.8rem;
-  border: 1px solid #3C7334;
+  border: 1px solid #53861c;
   background-color: transparent;
   border-radius: 0.25rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -1060,7 +1061,7 @@ h6 {
   right: 0;
   width: 60%;
   height: calc(100% + 10vw);
-  background-color: #D9CAAD;
+  background-color: #F2E0DF;
   z-index: -1;
 }
 @media (max-width: 900px) {
@@ -1080,7 +1081,7 @@ h6 {
 .primaryCtaBtn {
   display: inline-block;
   padding: 0.8rem 1.6rem;
-  background-color: #3C7334;
+  background-color: #64a222;
   color: #f7fafc;
   border-radius: 0.25rem;
   transition: 200ms ease;
@@ -1088,7 +1089,7 @@ h6 {
   letter-spacing: 1.5px;
 }
 .primaryCtaBtn:hover {
-  background-color: #4e9644;
+  background-color: #53861c;
   transform: translateY(-2px);
 }
 .primaryCtaBtn:focus {

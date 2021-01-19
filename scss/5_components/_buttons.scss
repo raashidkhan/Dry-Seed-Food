@@ -1,7 +1,7 @@
 .primaryCtaBtn {
     display: inline-block;
     padding: 0.8rem 1.6rem;
-    background-color: $green-400;
+    background-color: $green-300;
     color: $grey-100;
     border-radius: $bora-small;
     transition: 200ms ease;
@@ -11,7 +11,7 @@
 
 
     &:hover {
-        background-color: $green-300;
+        background-color: $green-400;
         transform: translateY(-2px);
     }
 

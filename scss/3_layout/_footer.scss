@@ -1,8 +1,8 @@
 .footer {
     width: 100vw;
-    background-color: $accent-color-200;
+    background-color: $grey-100;
     padding: 5vw;
-    color: $grey-100;
+    color: $grey-800;
 
     @include breakpoint(tab) {
         padding: 10vw 5vw;
