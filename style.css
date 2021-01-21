@@ -10,20 +10,20 @@
 html {
   font-size: 62.5%;
 }
+@media (min-width: 2500px) {
+  html {
+    font-size: 175%;
+  }
+}
+@media (min-width: 1900px) {
+  html {
+    font-size: 100%;
+  }
+}
 
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-}
-@media (min-width: 2860px) {
-  body {
-    font-size: 150%;
-  }
-}
-@media (min-width: 1900px) {
-  body {
-    font-size: 100%;
-  }
 }
 body::-webkit-scrollbar {
   background-color: #F2E0DF;

@@ -11,6 +11,14 @@
 
 html {
     font-size: 62.5%;
+
+    @include breakpoint(twok-above) {
+        font-size: 175%;
+    }
+
+    @include breakpoint(large-desktop) {
+        font-size: 100%;
+    }
 }
 
 ::selection {
@@ -23,13 +31,7 @@ body {
     overflow-x: hidden;
 
 
-    @include breakpoint(twok-above) {
-        font-size: 150%;
-    }
 
-    @include breakpoint(large-desktop) {
-        font-size: 100%;
-    }
 
 
 

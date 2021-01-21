@@ -3,7 +3,7 @@
 
 @mixin breakpoint($point) {
     @if $point==twok-above {
-        @media (min-width: 2860px) {
+        @media (min-width: 2500px) {
             @content;
         }
     }
